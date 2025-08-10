@@ -1,7 +1,7 @@
 site_name: Stanford Self-Study (Vedant)
 site_description: My open-source self-study of Stanford AI/ML/Robotics courses with distilled notes, code, and mini-projects.
-site_url: https://<YOUR_GITHUB_USERNAME>.github.io/stanford-self-study
-repo_url: https://github.com/<YOUR_GITHUB_USERNAME>/stanford-self-study
+site_url: https://VedSoni-dev.github.io/stanford-self-study
+repo_url: https://github.com/VedSoni-dev/stanford-self-study
 theme:
   name: material
   features:
@@ -34,7 +34,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<YOUR_GITHUB_USERNAME>
+      link: https://github.com/VedSoni-dev
   analytics: {}
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
