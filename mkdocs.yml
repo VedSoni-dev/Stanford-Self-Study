@@ -1,0 +1,51 @@
+site_name: Stanford Self-Study (Vedant)
+site_description: My open-source self-study of Stanford AI/ML/Robotics courses with distilled notes, code, and mini-projects.
+site_url: https://<YOUR_GITHUB_USERNAME>.github.io/stanford-self-study
+repo_url: https://github.com/<YOUR_GITHUB_USERNAME>/stanford-self-study
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - toc:
+      permalink: true
+plugins:
+  - search
+  - glightbox
+  - macros
+  - mkdocs-jupyter
+  - mermaid2
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<YOUR_GITHUB_USERNAME>
+  analytics: {}
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
+  - js/math.js
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+nav:
+  - Home: index.md
+  - How to Use: how-to-use.md
+  - Style Guide: style.md
+  - Courses:
+      - CS229 (Machine Learning): courses/CS229/index.md
+      - CS231n (CNNs for Visual Recognition): courses/CS231n/index.md
