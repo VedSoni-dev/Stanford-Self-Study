@@ -1,43 +1,28 @@
-# Stanford Self-Study (Vedant)
+# Stanford Self-Study (Repo-only)
 
-Live site: https://vedsoni-dev.github.io/Stanford-Self-Study/
+This repo is intentionally simple: no website, no build. I organize by phases and drop my PDFs directly into each phase folder.
 
-Public, structured notes + code as I self-learn top Stanford AI/ML/Robotics courses.
-The goal isn’t to mirror PDFs — it’s to **distill**, **apply**, and **build**.
+## Structure
+- `phases/phase-1/` — Core Foundations
+- `phases/phase-2/` — Intro to AI & Systems
+- `phases/phase-3/` — Deep Learning Core
+- `phases/phase-4/` — Advanced AI Theory & Agents
+- `phases/phase-5/` — Robotics Mastery
+- `phases/phase-6/` — Specialized & Math Depth
 
-## Why this exists
-- Open-source, disciplined learning in public
-- Distilled notes (my words) + minimal formulas that matter
-- Small, runnable examples to prove understanding
-- Portfolio signal for research & internships
+Each folder has a `README.md`. I upload my notes as PDFs here (and any related files). Suggested naming:
+- `notes.pdf` — distilled notes
+- `slides.pdf` — optional
+- `exercises.pdf` — optional
 
-## What’s inside
-- `docs/` → Public website (MkDocs Material) with LaTeX
-- `courses/` → Course folders with modules: `notes.md`, `example_project.ipynb`, `hw_solution/`
-- `scripts/create_module.py` → Scaffolds new modules quickly
-- `notebooks/` → Scratch work / experiments
+## How I use this
+1) Learn from Stanford slides/lectures.
+2) Distill into a PDF and save it to the relevant `phases/phase-*/` folder.
+3) Optionally jot a short log entry in that folder’s `README.md`.
 
-## Courses (growing)
-- [ ] CS229 – Machine Learning
-- [ ] CS231n – Convolutional Neural Networks for Visual Recognition
-- [ ] CS224N – Natural Language Processing with Deep Learning (planned)
-- [ ] CS238 – Decision Making under Uncertainty (planned)
+## Study log (high level)
+- 2025-08-11: Repo reset to minimal, phase-based structure.
 
-## Study log
-- **Week 1:** Set up repo & site. Re-derived normal equation; fit LR on toy data.
-- **Week 2:** Logistic regression from scratch; gradient check passed.
-
-## Credits & Fair Use
-- Links to original course pages and materials are included in each course index.
-- All summaries and solutions are my own work. Please follow each course’s honor code.
-
-## Local dev
-```bash
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
-pip install -r requirements.txt
-mkdocs serve
-```
-
-## Deploy (GitHub Pages)
-Push to main; CI publishes to gh-pages. Live site:
-https://vedsoni-dev.github.io/Stanford-Self-Study/
+## License / Fair Use
+- License: see `LICENSE` in this repo.
+- I respect course honor codes. My summaries are my own; I link to official materials where appropriate.
