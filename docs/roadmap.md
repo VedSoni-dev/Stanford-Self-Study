@@ -7,7 +7,7 @@ A phased plan to progress from foundations to advanced AI, agents, and robotics,
 (Get the math, probability, and basic CS building blocks out of the way, while doing something social-impact focused on the side)
 
 - Main Tech Courses:
-  - CS103A – Mathematical Foundations of Computing – Logic, proofs, sets.
+  - CS103/CS103A – Mathematical Foundations of Computing – Logic, proofs, sets.
   - CS109 – Probability for Computer Scientists – Essential for ML & robotics reasoning.
 - Breather / Social Good:
   - CS21Si – AI for Social Good – Project-based, socially relevant applications.
@@ -60,7 +60,7 @@ A phased plan to progress from foundations to advanced AI, agents, and robotics,
 ---
 
 ## Tracking (checklist)
-- [ ] CS103A — Mathematical Foundations of Computing
+- [ ] CS103/CS103A — Mathematical Foundations of Computing
 - [ ] CS109 — Probability for Computer Scientists
 - [ ] CS221 — AI: Principles and Techniques
 - [ ] CS123 — Hands-On AI-Enabled Systems

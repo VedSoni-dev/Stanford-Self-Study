@@ -68,7 +68,7 @@ nav:
   - Style Guide: style.md
   - Courses:
       - Phase 1 — Core Foundations:
-          - CS103A (Math Foundations): courses/CS103A/index.md
+          - CS103/CS103A (Math Foundations): courses/CS103A/index.md
           - CS109 (Probability): courses/CS109/index.md
           - CS21Si (AI for Social Good): courses/CS21Si/index.md
       - Phase 2 — Intro to AI & Systems:
