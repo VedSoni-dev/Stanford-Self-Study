@@ -45,6 +45,7 @@ extra_css:
 nav:
   - Home: index.md
   - How to Use: how-to-use.md
+  - Roadmap: roadmap.md
   - Style Guide: style.md
   - Courses:
       - CS229 (Machine Learning): courses/CS229/index.md
