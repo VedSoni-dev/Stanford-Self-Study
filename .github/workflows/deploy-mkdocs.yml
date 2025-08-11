@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+﻿name: Deploy MkDocs
 on:
   push:
     branches: [ main ]
@@ -13,13 +13,12 @@ jobs:
         with:
           python-version: '3.x'
       - run: pip install -r requirements.txt
-      # Build LaTeX to PDF (tectonic)
-      - name: Install tectonic
-        run: sudo apt-get update && sudo apt-get install -y tectonic
+      - name: Install TeX Live (latexmk)
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
       - name: Compile CS103 Lecture 1 PDF
         run: |
           cd courses/CS103A/01-intro-set-theory
-          tectonic lecture1.tex
+          latexmk -pdf -interaction=nonstopmode -halt-on-error lecture1.tex
           mkdir -p ../../../docs/courses/CS103A
           cp lecture1.pdf ../../../docs/courses/CS103A/
       - run: mkdocs build --strict
