@@ -1,5 +1,7 @@
 # Stanford Self-Study (Vedant)
 
+Live site: https://vedsoni-dev.github.io/Stanford-Self-Study/
+
 Public, structured notes + code as I self-learn top Stanford AI/ML/Robotics courses.
 The goal isn’t to mirror PDFs — it’s to **distill**, **apply**, and **build**.
 
@@ -37,5 +39,5 @@ mkdocs serve
 ```
 
 ## Deploy (GitHub Pages)
-Push to main; CI publishes to gh-pages. Site URL:
-https://<YOUR_GITHUB_USERNAME>.github.io/stanford-self-study
+Push to main; CI publishes to gh-pages. Live site:
+https://vedsoni-dev.github.io/Stanford-Self-Study/
