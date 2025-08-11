@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\title{CS103/CS103A --- Lecture 1: Introduction to Set Theory \\ \& Computation Foundations}
+\author{Vedant}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Learning Goals}
+\begin{itemize}[leftmargin=*]
+  \item Understand the scope of CS103: computability theory, complexity theory, discrete mathematics
+  \item Learn fundamental set theory concepts and notation
+  \item Understand infinite sets and different sizes of infinity
+  \item Recognize the relationship between programs, strings, and problems
+  \item Appreciate the limits of computation (some problems are unsolvable)
+\end{itemize}
+
+\section*{Key Formulas \& Notation}
+\begin{itemize}[leftmargin=*]
+  \item Set notation: $\{a,b,c\}$ --- unordered collection of distinct elements
+  \item Element notation:  \in S$ (\emph{x} is an element of $),  \notin S$ (\emph{x} is not an element)
+  \item Equality of sets: same elements, order irrelevant, duplicates ignored
+  \item Special sets: Empty set $\varnothing$; Naturals $\mathbb{N} = \{0,1,2,\dots\}$; Integers $\mathbb{Z} = \{\dots,-1,0,1,\dots\}$; Reals $\mathbb{R}$
+  \item Set-builder notation: $\{x \in S \mid \text{property}(x)\}$, e.g., $\{n \in \mathbb{N} \mid n \text{ is even}\} = \{0,2,4,\dots\}$
+  \item Common operations: Union  \cup B$, Intersection  \cap B$, Difference  \setminus B$, Symmetric difference  \triangle B$
+  \item Subsets:  \subseteq T$ if every element of $ is in $. Power set: $\mathcal{P}(S) = \{ T \mid T \subseteq S\}$
+  \item Cardinality: $|S|$ is the number of elements in $. Infinite cardinality: $|\mathbb{N}| = \aleph_0$
+  \item Cantor's Theorem: $|S| < |\mathcal{P}(S)|$ --- every set is smaller than its power set
+\end{itemize}
+
+\section*{Notes}
+\subsection*{Course Focus}
+\begin{itemize}[leftmargin=*]
+  \item Explore `laws of physics'' in CS --- fundamental limits on what computers can and cannot do
+  \item Emphasis on proof-based reasoning, not just calculations
+  \item No advanced math prerequisites; high school algebra is enough
+\end{itemize}
+
+\subsection*{Sets}
+\begin{itemize}[leftmargin=*]
+  \item Sets are unordered, contain distinct elements, and can include other sets
+  \item Empty set $\varnothing$ has no elements; $\{\varnothing\}$ is a set containing the empty set
+  \item Important distinction: an element vs. a set containing that element, e.g.,  \neq \{1\}$, $\varnothing \neq \{\varnothing\}$
+  \item Duplicates in set definitions are ignored
+  \item Infinite sets like $\mathbb{N}$, $\mathbb{Z}$, and $\mathbb{R}$ exist; not all infinities are equal in size
+\end{itemize}
+
+\subsection*{Infinite Cardinalities}
+\begin{itemize}[leftmargin=*]
+  \item Same-size rule: two sets have the same size if their elements can be paired 1:1 with none left over
+  \item $\mathbb{N}$ and the even numbers have the same size (bijection  \leftrightarrow 2n$)
+  \item $\mathbb{N}$ and $\mathbb{Z}$ have the same size (pair non-negatives with positives, negatives with odds)
+  \item Cantor's diagonalization: $\mathcal{P}(S)$ is strictly larger than $ $\Rightarrow$ not all infinities are equal; there are infinitely many infinities
+\end{itemize}
+
+\subsection*{Programs, Strings, and Problems}
+\begin{itemize}[leftmargin=*]
+  \item Every computer program is a finite string of characters; hence $|\text{Programs}| \le |\text{Strings}|$
+  \item Problems can be represented as sets of strings (e.g., given a string, determine membership in $)
+  \item From Cantor: $|\text{Strings}| < |\mathcal{P}(\text{Strings})| \le |\text{Problems}|$
+  \item Therefore $|\text{Programs}| < |\text{Problems}|$ $\Rightarrow$ there are more problems than programs; some problems are unsolvable
+  \item For a random problem, probability of solvability is essentially 0
+\end{itemize}
+
+\section*{Examples}
+\subsection*{Even Natural Numbers}
+\begin{align*}
+E 
+  &= \{ n \in \mathbb{N} \mid n \text{ is even} \} \\
+  &= \{0,2,4,6,\dots\}
+\end{align*}
+Cardinality: $|E| = |\mathbb{N}| = \aleph_0$ (same size as naturals despite being `smaller'' in content).
+
+\subsection*{Set Relationships}
+\begin{itemize}[leftmargin=*]
+  \item  = \{1,2,3\}$,  = \{3,4,5\}$
+  \item Union:  \cup B = \{1,2,3,4,5\}$
+  \item Intersection:  \cap B = \{3\}$
+  \item Difference:  \setminus B = \{1,2\}$
+  \item Symmetric difference:  \triangle B = \{1,2,4,5\}$
+\end{itemize}
+
+\subsection*{Subset \& Power Set Example}
+Given  = \{a,b\}$,
+\[
+\mathcal{P}(S) = \{\varnothing, \{a\}, \{b\}, \{a,b\}\}.
+\]
+
+\subsection*{Infinite Set Mapping (Bijection)}
+A bijection between $\mathbb{N}$ and the even numbers:
+\[
+0 \leftrightarrow 0,\; 1 \leftrightarrow 2,\; 2 \leftrightarrow 4,\; 3 \leftrightarrow 6,\; \dots
+\]
+
+\subsection*{Cantor's Diagonalization (Conceptual)}
+\begin{enumerate}[leftmargin=*]
+  \item List all subsets of a set (conceptually)
+  \item Flip the  element's membership in the  subset
+  \item The resulting subset is not in the list $\Rightarrow$ $|\mathcal{P}(S)| > |S|$
+\end{enumerate}
+
+\section*{Reflection}
+\begin{itemize}[leftmargin=*]
+  \item Sets are the foundation for understanding computation limits
+  \item Cantor's theorem connects set theory directly to the impossibility of solving certain problems with computers
+  \item Computation isn't just about algorithms --- it's also about the inherent boundaries of what's possible
+\end{itemize}
+
+\end{document}

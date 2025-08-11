@@ -1,5 +1,7 @@
 # CS103 — Lecture 1: Introduction to Set Theory & Computation Foundations
 
+[Download PDF (built by CI)](lecture1.pdf)
+
 ## Learning Goals
 - Understand the scope of CS103:
   - Computability theory
