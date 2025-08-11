@@ -4,15 +4,32 @@ site_url: https://VedSoni-dev.github.io/stanford-self-study
 repo_url: https://github.com/VedSoni-dev/stanford-self-study
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.sections
     - navigation.tabs
+    - navigation.tabs.sticky
     - toc.integrate
     - content.code.copy
     - content.action.edit
   icon:
     repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 markdown_extensions:
   - admonition
   - attr_list
@@ -42,11 +59,33 @@ extra_javascript:
   - js/math.js
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+  - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap
+  - assets/css/brand.css
 nav:
   - Home: index.md
   - How to Use: how-to-use.md
   - Roadmap: roadmap.md
   - Style Guide: style.md
   - Courses:
-      - CS229 (Machine Learning): courses/CS229/index.md
-      - CS231n (CNNs for Visual Recognition): courses/CS231n/index.md
+      - Phase 1 — Core Foundations:
+          - CS103A (Math Foundations): courses/CS103A/index.md
+          - CS109 (Probability): courses/CS109/index.md
+          - CS21Si (AI for Social Good): courses/CS21Si/index.md
+      - Phase 2 — Intro to AI & Systems:
+          - "CS221 (AI: Principles & Techniques)": courses/CS221/index.md
+          - CS123 (Hands-On AI Systems): courses/CS123/index.md
+          - CS25 (Transformers United V5): courses/CS25/index.md
+      - Phase 3 — Deep Learning Core:
+          - "CS224N (NLP with DL)": courses/CS224N/index.md
+          - CS224R (Deep Reinforcement Learning): courses/CS224R/index.md
+          - CS329X (Human-Centered LLMs): courses/CS329X/index.md
+      - Phase 4 — Advanced AI Theory & Agents:
+          - "CS234 (Reinforcement Learning)": courses/CS234/index.md
+          - "CS336 (Language Modeling from Scratch)": courses/CS336/index.md
+          - "CS329A (Self-Improving AI Agents)": courses/CS329A/index.md
+      - Phase 5 — Robotics Mastery:
+          - "Principles of Robot Autonomy II": courses/PRO2/index.md
+          - "CS224G (RL for Robotics)": courses/CS224G/index.md
+      - Phase 6 — Specialized & Math Depth:
+          - "CS239 (Eigenvalue Computations)": courses/CS239/index.md
+          - "CS224W (ML with Graphs)": courses/CS224W/index.md
